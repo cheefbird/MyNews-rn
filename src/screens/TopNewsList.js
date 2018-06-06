@@ -12,9 +12,28 @@ class TopNewsList extends Component {
     this.state = { articles };
   }
 
+  keyExtractor = (item, index) => index.toString();
+
+  renderItem = item => {
+    <ListItem
+      title={item.title}
+      subtitle={item.description}
+      leftAvatar={{
+        source: item.urlToImage && { uri: item.urlToImage }
+      }}
+    />;
+  };
+
   render() {
     console.log(this.state.articles);
-    return <Text>This will be a list.</Text>;
+    return (
+      <FlatList
+        data={this.state.articles}
+        extraData={this.state}
+        keyExtractor={this.keyExtractor}
+        renderItem={this.renderItem}
+      />
+    );
   }
 }
 

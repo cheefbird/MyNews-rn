@@ -16,9 +16,6 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <TopNewsList />
-        {/*<Text style={styles.welcome}>Welcome to React Native!</Text>*/}
-        {/*<Text style={styles.instructions}>To get started, edit App.js</Text>*/}
-        {/*<Text style={styles.instructions}>{instructions}</Text>*/}
       </View>
     );
   }
@@ -27,8 +24,8 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    // justifyContent: "center",
+    // alignItems: "center",
     backgroundColor: "#F5FCFF"
   },
   welcome: {

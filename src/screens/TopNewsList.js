@@ -3,34 +3,36 @@ import React, { Component } from "react";
 import { Text, FlatList } from "react-native";
 import { ListItem } from "react-native-elements";
 
-import { staticData } from "../helpers/static-data";
+import staticData from "../helpers/staticData.json";
 
 class TopNewsList extends Component {
   constructor(props) {
     super(props);
     const { articles } = staticData;
-    this.state = { articles };
+    this.state = { newsArticles: articles };
   }
 
-  keyExtractor = (item, index) => index.toString();
-
-  renderItem = item => {
-    <ListItem
-      title={item.title}
-      subtitle={item.description}
-      leftAvatar={{
-        source: item.urlToImage && { uri: item.urlToImage }
-      }}
-    />;
+  renderItem = ({ item }) => {
+    console.log("INSIDE RENDERITEM");
+    console.log(item);
+    return (
+      <ListItem
+        roundAvatar
+        title={item.title}
+        subtitle={item.description}
+        avatar={{
+          uri: item.urlToImage
+        }}
+      />
+    );
   };
 
   render() {
-    console.log(this.state.articles);
+    console.log(this.state.newsArticles);
     return (
       <FlatList
-        data={this.state.articles}
+        data={this.state.newsArticles}
         extraData={this.state}
-        keyExtractor={this.keyExtractor}
         renderItem={this.renderItem}
       />
     );

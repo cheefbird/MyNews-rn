@@ -1,0 +1,246 @@
+{
+  "status": "ok",
+  "totalResults": 20,
+  "articles": [
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "ABC News",
+      "title": "Crossfit executive fired over anti-gay tweet about Pride Month workout",
+      "description": "Indianapolis CrossFit closes amidst cancellation of Pride workout.",
+      "url": "https://abcnews.go.com/US/crossfit-gym-closes-pride-month-workout-canceled/story?id=55711335",
+      "urlToImage": "https://s.abcnews.com/images/US/crossfit_jd_180607_hpMain_16x9_992.jpg",
+      "publishedAt": "2018-06-07T19:40:00Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo.com"
+      },
+      "author": null,
+      "title": "Report: Patriots' Julian Edelman facing four-game suspension for performance enhancers",
+      "description": "The 32-year-old missed all of last year after suffering a torn ACL in the preseason.",
+      "url": "https://sports.yahoo.com/report-patriots-julian-edelman-facing-four-game-suspension-performance-enhancers-180836485.html",
+      "urlToImage": "https://s.yimg.com/uu/api/res/1.2/Tnb1GJCsM3JQIWfas4TmPQ--~B/aD0yOTg0O3c9NDEzNztzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/32ef9974a3edd1db0735c878b2d6f747",
+      "publishedAt": "2018-06-07T19:00:15Z"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": "Kathryn Watson",
+      "title": "Trump and Japan's Shinzo Abe hold joint press conference — live updates",
+      "description": "President Trump and Japan's leader are meeting ahead of the Singapore summit with North Korea",
+      "url": "https://www.cbsnews.com/live-news/trump-holds-joint-press-conference-japan-shinzo-abe-today-2018-06-07-live-updates/",
+      "urlToImage": "https://cbsnews3.cbsistatic.com/hub/i/r/2018/06/07/22d26297-36c8-4ae7-bfa3-2d68623ec051/thumbnail/1200x630/d923df3620913d948a04583676b89c9a/gettyimages-969184384.jpg",
+      "publishedAt": "2018-06-07T18:03:28Z"
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Tim Higgins",
+      "title": "Tesla Autopilot System Warned Driver to Put Hands on Wheel, US Investigators Say",
+      "description": "A Tesla vehicle involved in a fatal crash in March was speeding on a highway with its driver-assistance feature engaged and had alerted the driver to put his hands on the steering wheel more than 15 minutes before the collision, U.S. safety investigators said.",
+      "url": "https://www.wsj.com/articles/tesla-autopilot-system-warned-driver-to-put-hands-on-wheel-u-s-investigators-say-1528394536",
+      "urlToImage": "https://si.wsj.net/public/resources/images/B3-AH171_0530TE_SOC_20180503020058.jpg",
+      "publishedAt": "2018-06-07T18:02:00Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Space.com"
+      },
+      "author": "Mike Wall",
+      "title": "Curiosity Rover Finds Ancient 'Building Blocks for Life' on Mars",
+      "description": "If you're holding out hope that Mars may have once been an inhabited world, two new studies should put a little spring in your step.",
+      "url": "https://www.space.com/40819-mars-methane-organics-curiosity-rover.html",
+      "urlToImage": "https://img.purch.com/h/1000/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA3Ni85MTEvb3JpZ2luYWwvY3VyaW9zaXR5LXNlbGZpZS5qcGc=",
+      "publishedAt": "2018-06-07T18:01:00Z"
+    },
+    {
+      "source": {
+        "id": "the-new-york-times",
+        "name": "The New York Times"
+      },
+      "author": "http://www.nytimes.com/by/michael-d-shear",
+      "title": "Trump Is About to Meet US Allies in Canada. They're Angry.",
+      "description": "As he heads to a G-7 meeting amid a tariff dispute, President Trump is the black sheep of the family who has picked a fight with his relatives just before arriving to dinner.",
+      "url": "https://www.nytimes.com/2018/06/07/us/politics/trump-allies-g7-summit-meeting.html",
+      "urlToImage": "https://static01.nyt.com/images/2018/06/08/us/politics/08dc-summit-1/08dc-summit-1-facebookJumbo.jpg",
+      "publishedAt": "2018-06-07T17:46:32Z"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "https://www.facebook.com/profile.php?id=100005322646911&fref=ts",
+      "title": "Colin Kaepernick's lawyers may seek testimony by Trump, Pence in collusion grievance",
+      "description": "The president and vice president have played key roles in the controversy over national anthem protests, but the scheduling of such testimony could be opposed by the White House.",
+      "url": "https://www.washingtonpost.com/news/sports/wp/2018/06/07/colin-kaepernicks-lawyers-may-seek-testimony-by-trump-pence-in-collusion-grievance/",
+      "urlToImage": "https://www.washingtonpost.com/resizer/o1yb_d8X0Fa2giHKYDPagVpOi5E=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/REH4IVRW2M6GNLXC766ROMK67M.jpg",
+      "publishedAt": "2018-06-07T17:41:45Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "People.com"
+      },
+      "author": "Julie Mazziotta",
+      "title": "Kate Spade Suffered from Depression and Anxiety: How the Conditions Can Lead to Suicide",
+      "description": "",
+      "url": "https://people.com/health/kate-spade-depression-anxiety-led-suicide/",
+      "urlToImage": "https://peopledotcom.files.wordpress.com/2018/06/kate-spade-06.jpg?crop=0px%2C0px%2C1200px%2C630px&resize=1200%2C630",
+      "publishedAt": "2018-06-07T17:36:09Z"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "https://www.facebook.com/amyellisnutt",
+      "title": "Suicide rates rise sharply across the United States, new report shows",
+      "description": "Between 1999 and 2016, suicide rates increased across age, gender, race and ethnicity.",
+      "url": "https://www.washingtonpost.com/news/to-your-health/wp/2018/06/07/u-s-suicide-rates-rise-sharply-across-the-country-new-report-shows/",
+      "urlToImage": "https://www.washingtonpost.com/resizer/GTS8Zm0OzZ5tCWbYfOL0nbryWbQ=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/ZNLCDAWW7U44VLOQFVKEHDPMTE.jpg",
+      "publishedAt": "2018-06-07T17:20:21Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nbclosangeles.com"
+      },
+      "author": "Jonathan Lloyd, Wire Services",
+      "title": "'Nothing Short of Evil': Mother, Boyfriend Sentenced in Torture Death of 8-Year-Old Gabriel Fernandez",
+      "description": "The mother of an 8-year-old Palmdale boy was sentenced to prison for life and her boyfriend will be sent to death row for the child's torture death, a case that the judge called \"nothing short of evil.\"",
+      "url": "https://www.nbclosangeles.com/news/local/Gabriel-Fernandez-Child-Abuse-Torture-Death-Sentencing-Palmdale-484845621.html",
+      "urlToImage": "https://media.nbclosangeles.com/images/1200*678/TLMD-los-angeles-juicio-isauro-aguirre-muerte-de-gabriel-fernandez-tortura---portada---.JPG",
+      "publishedAt": "2018-06-07T17:02:50Z"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "https://www.facebook.com/simon.denyer?fref=ts",
+      "title": "US reaches deal with China's ZTE that includes $1 billion fine, commerce secretary says",
+      "description": "The agreement also includes ZTE’s acceptance of an embedded U.S. compliance team.",
+      "url": "https://www.washingtonpost.com/business/economy/us-reaches-deal-with-chinas-zte-that-includes-1-billion-fine-commerce-secretary-says/2018/06/07/ccffa4b0-6a52-11e8-9e38-24e693b38637_story.html",
+      "urlToImage": "https://www.washingtonpost.com/resizer/RyaAMrdQls34AiuRJPljad7DOP4=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/SVMBDBDKKUI6RPVHZDVSRPCSWE.jpg",
+      "publishedAt": "2018-06-07T17:02:01Z"
+    },
+    {
+      "source": {
+        "id": "the-huffington-post",
+        "name": "The Huffington Post"
+      },
+      "author": "Sebastian Murdock",
+      "title": "Immigrant Faces Deportation After Delivering Pizza To New York Army Base",
+      "description": "The pizza deliverer's arrest \"does nothing to make us safer.\"",
+      "url": "https://www.huffingtonpost.com/entry/immigrant-faces-deportation-after-delivering-pizza-to-new-york-army-base_us_5b1947fae4b0734a993bdc31",
+      "urlToImage": "https://img.huffingtonpost.com/asset/5b1951a02000006505b93b31.png?cache=VlDerPVRov&ops=1200_630",
+      "publishedAt": "2018-06-07T16:44:28Z"
+    },
+    {
+      "source": {
+        "id": "nfl-news",
+        "name": "NFL News"
+      },
+      "author": null,
+      "title": "Terrell Owens declines to attend HOF enshrinement",
+      "description": "In an unprecedented decision, former All-Pro receiver Terrell Owens has declined his invitation to Canton for the Pro Football Hall of Fame's August enshrinement ceremony.",
+      "url": "http://www.nfl.com/news/story/0ap3000000936209/article/terrell-owens-declines-to-attend-hof-enshrinement",
+      "urlToImage": "http://static.nfl.com/static/content/public/photo/2018/06/07/0ap3000000936205_thumbnail_200_150.jpg",
+      "publishedAt": "2018-06-07T16:43:45Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo.com"
+      },
+      "author": null,
+      "title": "The Latest: US sending aid for Guatemala volcano victims",
+      "description": "SAN MIGUEL LOS LOTES, Guatemala (AP) — The latest on the eruption of Guatemala's Volcano of Fire (all times local):",
+      "url": "https://www.yahoo.com/news/latest-guatemalan-children-flown-texas-treatment-130833656.html",
+      "urlToImage": "https://s.yimg.com/uu/api/res/1.2/HfrRUspm8rb0vk2PgYn4nQ--~B/aD0yODM4O3c9NDI1NztzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en_us/News/ap_webfeeds/dbbb15e9568e4a3cb225ef4f44f81392.jpg",
+      "publishedAt": "2018-06-07T16:06:49Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "People.com"
+      },
+      "author": "Erin Hill",
+      "title": "Queen Maxima of the Netherlands' Sister, 33, Found Dead in Her Home of Apparent Suicide",
+      "description": "",
+      "url": "https://people.com/royals/queen-maxima-sister-found-dead-apparent-suicide/",
+      "urlToImage": "https://peopledotcom.files.wordpress.com/2018/06/queen-maxima-1.jpg?crop=0px%2C0px%2C2700px%2C1417.5px&resize=1200%2C630",
+      "publishedAt": "2018-06-07T14:17:12Z"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "https://www.facebook.com/simon.denyer?fref=ts",
+      "title": "China says probe sheds no light on mystery illness striking US diplomats",
+      "description": "The United States has evacuated more U.S. from Guangzhou after they fell ill from hearing strange sounds.",
+      "url": "https://www.washingtonpost.com/world/asia_pacific/china-still-has-no-clue-about-mystery-illness-striking-us-diplomats-after-inquiry/2018/06/07/a328837a-6a2d-11e8-bbc5-dc9f3634fa0a_story.html",
+      "urlToImage": "https://www.washingtonpost.com/resizer/6vm0X061pT3OkfJFQZsxh5TgVr4=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/FUAAPEDKGII6RPVHZDVSRPCSWE.jpg",
+      "publishedAt": "2018-06-07T13:17:02Z"
+    },
+    {
+      "source": {
+        "id": "the-new-york-times",
+        "name": "The New York Times"
+      },
+      "author": "Alexander Burns, Denise Lu, Blacki Migliozzi",
+      "title": "California Democrats Favor Mainstream House Candidates, Despite Liberal Energy",
+      "description": "Democrats appear set to test whether conventionally liberal candidates can make deep inroads in moderate areas.",
+      "url": "https://www.nytimes.com/interactive/2018/06/07/us/politics/california-house-primary-candidates.html",
+      "urlToImage": "https://static01.nyt.com/images/2018/06/07/us/california-house-candidate-ideology-promo-1528385906006/california-house-candidate-ideology-promo-1528385906006-facebookJumbo.jpg",
+      "publishedAt": "2018-06-07T11:00:19Z"
+    },
+    {
+      "source": {
+        "id": "usa-today",
+        "name": "USA Today"
+      },
+      "author": "Kelly Lawler",
+      "title": "Samantha Bee addresses Ivanka Trump comment on 'Full Frontal': 'I regret it'",
+      "description": "Samantha Bee caused controversy last week for calling Ivanka Trump an expletive on her show 'Full Frontal.' In her first episode back she addressed the issue and apologized again.",
+      "url": "https://www.usatoday.com/story/life/tv/2018/06/06/samantha-bee-apologizes-ivanka-trump-expletive-full-frontal/678775002/",
+      "urlToImage": "https://www.gannett-cdn.com/-mm-/709159b0999c20b88b62e753e8e4e98cea30f556/c=0-248-4928-3032&r=x1683&c=3200x1680/local/-/media/2018/04/10/USATODAY/USATODAY/636589618049360272-XXX-Samantha-Bee-rd141.JPG",
+      "publishedAt": "2018-06-07T03:13:00Z"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": null,
+      "title": "Stormy Daniels sues her former attorney, accusing him of being a 'puppet' for Trump",
+      "description": "The porn star released text messages that the lawsuit said show “collusion” between Keith Davidson and the president’s personal attorney, Michael Cohen.",
+      "url": "https://www.washingtonpost.com/politics/stormy-daniels-sues-her-former-attorney-accusing-him-of-being-a-puppet-for-trump/2018/06/06/da5cc906-69b9-11e8-bbc5-dc9f3634fa0a_story.html",
+      "urlToImage": "https://www.washingtonpost.com/resizer/XWnACAUZF5sW3n4V3OToakWfVyc=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WKRVFFTJ4AI6RPVHZDVSRPCSWE.jpg",
+      "publishedAt": "2018-06-06T23:48:41Z"
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "The Editorial Board",
+      "title": "Cost-Benefit Reform at the EPA",
+      "description": "Under Obama, the EPA juked the numbers to justify costly regulation.",
+      "url": "https://www.wsj.com/articles/cost-benefit-reform-at-the-epa-1528326402",
+      "urlToImage": "https://si.wsj.net/public/resources/images/B3-AS122_3costb_SOC_20180606181015.jpg",
+      "publishedAt": "2018-06-06T23:06:00Z"
+    }
+  ]
+}

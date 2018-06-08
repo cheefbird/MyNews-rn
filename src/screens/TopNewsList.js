@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Text, FlatList } from "react-native";
 import { ListItem } from "react-native-elements";
 
+import ArticleCard from "../components/ArticleCard";
 import staticData from "../helpers/staticData.json";
 
 class TopNewsList extends Component {
@@ -12,27 +13,25 @@ class TopNewsList extends Component {
     this.state = { newsArticles: articles };
   }
 
+  keyExtractor = (item, index) => item.title;
+
   renderItem = ({ item }) => {
-    console.log("INSIDE RENDERITEM");
-    console.log(item);
     return (
-      <ListItem
-        roundAvatar
+      <ArticleCard
         title={item.title}
+        imageUri={item.urlToImage}
         subtitle={item.description}
-        avatar={{
-          uri: item.urlToImage
-        }}
+        buttonText="See More"
       />
     );
   };
 
   render() {
-    console.log(this.state.newsArticles);
     return (
       <FlatList
         data={this.state.newsArticles}
         extraData={this.state}
+        keyExtractor={this.keyExtractor}
         renderItem={this.renderItem}
       />
     );

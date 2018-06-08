@@ -1,12 +1,19 @@
 import React, { Component } from "react";
-import { Card, Text, Button } from "react-native-elements";
+import { Text } from "react-native";
+import { Card, Button } from "react-native-elements";
 
 class ArticleCard extends Component {
   render() {
     return (
-      <Card>
-        <Text h2>{this.props.title}</Text>
-        <Text>{this.props.subtitle}</Text>
+      <Card
+        containerStyle={{ padding: 8 }}
+        featuredTitle={this.props.title}
+        image={{ uri: this.props.imageUri }}
+        titleNumberOfLines={3}
+        imageStyle={{ flex: 1, top: 0, left: 0 }}
+        imageProps={{ resizeMode: "cover" }}
+      >
+        <Text style={{ marginBottom: 10 }}>{this.props.subtitle}</Text>
         <Button raised title={this.props.buttonText} />
       </Card>
     );

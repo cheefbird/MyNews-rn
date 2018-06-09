@@ -1,16 +1,32 @@
 {
   "parser": "babel-eslint",
-  "env": {
-    "browser": true
-  },
+  "extends": "airbnb",
   "plugins": [
-    "react"
-  ],
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
+    "react",
+    "flowtype",
+    "jsx-a11y",
+    "import"
   ],
   "rules": {
-    // overrides
+    "react/jsx-filename-extension": [
+      1, { "extensions": [".js", ".jsx"] }
+    ],
+    "react/prefer-stateless-function": [
+      2, { "ignorePureComponents": true }
+    ],
+    "react/forbid-prop-types": [0, { "forbid": [] }],
+    "import/extensions": [1, "never", { "svg": "always" }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "semi": ["error", "never"]
+  },
+  "env": {
+    "jest": true
   }
 }

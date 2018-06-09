@@ -36,7 +36,7 @@
     "preset": "react-native"
   },
   "prettier": {
-    "semi": false,
+    "semi": true,
     "printWidth": 100,
     "singleQuote": true,
     "trailingComma": "all"

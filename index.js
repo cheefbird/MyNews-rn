@@ -1,6 +1,7 @@
 // @flow
 
-import { AppRegistry } from 'react-native'
-import App from './src/App'
+import './src/config/ReactotronConfig';
+import { AppRegistry } from 'react-native';
+import App from './src/App';
 
-AppRegistry.registerComponent('MyNews', () => App)
+AppRegistry.registerComponent('MyNews', () => App);

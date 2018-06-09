@@ -1,23 +1,21 @@
 // @flow
 
-import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import Reactotron from 'reactotron-react-native';
 
 import TopNewsList from './screens/TopNewsList';
+import reducers from './reducers';
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    Reactotron.log({ numbers: [1, 2, 3], boolean: false, nested: { here: 'we go' } });
-    Reactotron.warn('*glares*');
-    return (
-      <View style={styles.container}>
-        <TopNewsList />
-      </View>
-    );
-  }
-}
+const App = () => (
+  <Provider store={createStore(reducers)}>
+    <View style={styles.container}>
+      <TopNewsList />
+    </View>
+  </Provider>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -27,3 +25,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
 });
+
+export default App;

@@ -24,7 +24,7 @@
         "peerDependencies": false
       }
     ],
-    "semi": ["error", "never"]
+    "semi": ["error"]
   },
   "env": {
     "jest": true

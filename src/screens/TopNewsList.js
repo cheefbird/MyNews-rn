@@ -1,40 +1,45 @@
 // @flow
 
+import _ from 'lodash';
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux';
 import { FlatList } from 'react-native';
 
+import { fetchTopArticles } from '../actions';
+
 import ArticleCard from '../components/ArticleCard';
-import staticData from '../helpers/staticData.json';
 
 class TopNewsList extends Component {
-  constructor(props) {
-    super(props);
-    const { articles } = staticData;
-    this.state = { articles };
+  componentWillMount() {
+    console.log('CWM');
+    this.props.fetchTopArticles();
+    console.log(this.props);
   }
 
-  keyExtractor = (item, index) => item.title;
-
-  renderItem = ({ item }) => (
-    <ArticleCard
-      title={item.title}
-      imageUri={item.urlToImage}
-      subtitle={item.description}
-      buttonText="See More"
-    />
-  );
-
-  render() {
+  renderItem(article) {
     return (
-      <FlatList
-        data={this.state.articles}
-        extraData={this.state}
-        keyExtractor={this.keyExtractor}
-        renderItem={this.renderItem}
+      <ArticleCard
+        title={article.title}
+        imageUri={article.urlToImage}
+        subtitle={article.description}
+        buttonText="See More"
       />
     );
   }
+
+  render() {
+    console.log(this.props);
+    return <FlatList data={this.props.articles} renderItem={this.renderItem} />;
+  }
 }
 
-export default TopNewsList;
+const mapStateToProps = state => {
+  const articles = _.map(state, article => ({ ...article }));
+  console.log(articles);
+  return { articles };
+};
+
+export default connect(
+  mapStateToProps,
+  { fetchTopArticles },
+)(TopNewsList);

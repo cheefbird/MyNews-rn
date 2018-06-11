@@ -6,6 +6,8 @@ import { Card, Button } from 'react-native-elements';
 
 class ArticleCard extends Component {
   render() {
+    console.log('Inside ArticleCard');
+    console.log(this.props);
     return (
       <Card
         containerStyle={{ padding: 8 }}

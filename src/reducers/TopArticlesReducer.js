@@ -2,10 +2,12 @@
 
 import { FETCH_TOP_ARTICLES } from '../actions/types';
 
-export default (state = {}, action) => {
+const INITIAL_STATE = {};
+
+export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case FETCH_TOP_ARTICLES:
-      return Object.assign({}, state, action.payload);
+      return action.payload;
 
     default:
       return state;

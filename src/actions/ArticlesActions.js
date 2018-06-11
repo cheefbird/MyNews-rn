@@ -10,13 +10,12 @@ export const fetchTopArticles = () => {
     )
       .then(response => response.json())
       .then(json => {
-        const { articles } = json;
-        console.log(articles);
+        const results = json.articles;
 
         // TODO: extract this to its own action
         dispatch({
           type: FETCH_TOP_ARTICLES,
-          payload: articles,
+          payload: results,
         });
       });
   };

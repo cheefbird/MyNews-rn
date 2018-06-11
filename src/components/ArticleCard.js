@@ -11,13 +11,13 @@ class ArticleCard extends Component {
     return (
       <Card
         containerStyle={{ padding: 8 }}
-        featuredTitle={this.props.title}
+        featuredTitle={this.props.title || 'Title'}
         image={{ uri: this.props.imageUri }}
         titleNumberOfLines={3}
         imageStyle={{ flex: 1, top: 0, left: 0 }}
         imageProps={{ resizeMode: 'cover' }}
       >
-        <Text style={{ marginBottom: 10 }}>{this.props.subtitle}</Text>
+        <Text style={{ marginBottom: 10 }}>{this.props.subtitle || 'Subtitle'}</Text>
         <Button raised title={this.props.buttonText} />
       </Card>
     );

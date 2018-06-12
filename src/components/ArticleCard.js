@@ -18,7 +18,7 @@ class ArticleCard extends Component {
         imageProps={{ resizeMode: 'cover' }}
       >
         <Text style={{ marginBottom: 10 }}>{this.props.subtitle}</Text>
-        <Button raised title={this.props.buttonText} />
+        <Button raised backgroundColor={'#006bcd'} title={this.props.buttonText} />
       </Card>
     );
   }

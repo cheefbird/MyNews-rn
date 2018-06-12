@@ -18,9 +18,9 @@ class TopNewsList extends Component {
 
   renderRow = ({ item }) => (
     <ArticleCard
-      title={item.title}
-      imageUri={item.urlToImage}
-      subtitle={item.description}
+      title={item.title || 'Article Title'}
+      imageUri={item.urlToImage || 'http://via.placeholder.com/1050x549'}
+      subtitle={item.description || ''}
       buttonText="See More"
     />
   );

@@ -1,27 +1,24 @@
 // @flow
 
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, Image } from 'react-native';
 import { Card, Button } from 'react-native-elements';
 
-class ArticleCard extends Component {
-  render() {
-    console.log('Inside ArticleCard');
-    console.log(this.props);
-    return (
-      <Card
-        containerStyle={{ padding: 8 }}
-        featuredTitle={this.props.title}
-        image={{ uri: this.props.imageUri }}
-        titleNumberOfLines={3}
-        imageStyle={{ flex: 1, top: 0, left: 0 }}
-        imageProps={{ resizeMode: 'cover' }}
-      >
-        <Text style={{ marginBottom: 10 }}>{this.props.subtitle}</Text>
-        <Button raised backgroundColor={'#006bcd'} title={this.props.buttonText} />
-      </Card>
-    );
-  }
-}
+const ArticleCard = (props) => {
+  const { title, urlToImage, description } = props.article;
+
+  return (
+    <Card
+      containerStyle={{ padding: 8 }}
+      featuredTitle={title}
+      // TODO: default image only loading sometimes??
+      image={{ uri: urlToImage || 'https://placeimg.com/366/150/people' }}
+      imageProps={{ resizeMode: 'cover' }}
+    >
+      <Text style={{ marginBottom: 10 }}>{description}</Text>
+      <Button raised backgroundColor="#006bcd" title="Read More" />
+    </Card>
+  );
+};
 
 export default ArticleCard;

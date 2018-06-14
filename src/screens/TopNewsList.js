@@ -16,14 +16,7 @@ class TopNewsList extends Component {
 
   keyExtractor = (item, index) => item.title;
 
-  renderRow = ({ item }) => (
-    <ArticleCard
-      title={item.title || 'Article Title'}
-      imageUri={item.urlToImage || 'http://via.placeholder.com/1050x549'}
-      subtitle={item.description || ''}
-      buttonText="See More"
-    />
-  );
+  renderRow = ({ item }) => <ArticleCard article={item} />;
 
   render() {
     console.log(this.props);

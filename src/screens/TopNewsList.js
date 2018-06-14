@@ -31,9 +31,9 @@ class TopNewsList extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   console.log(state);
-  const articles = _.map(state.articles, val => ({ ...val }));
+  const articles = _.map(state.articles, (val) => ({ ...val }));
   return { articles };
 };
 

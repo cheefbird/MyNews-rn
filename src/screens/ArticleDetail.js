@@ -9,11 +9,10 @@ import { WebView } from 'react-native';
 // };
 
 class ArticleDetail extends PureComponent {
-  static navigationOptions = ({ navigation }) => {
-    return {
-      title: navigation.getParam('title', 'Top News'),
-    };
-  };
+  static navigationOptions = ({ navigation }) => ({
+    title: navigation.getParam('title', 'Top News'),
+  });
+
   constructor(props) {
     super(props);
     console.log('INSIDE ARTICLEDETAIL');

@@ -24,7 +24,7 @@ class TopNewsList extends Component {
     <ArticleCard
       article={item}
       onPress={() =>
-        this.props.navigation.push('ArticleDetail', {
+        this.props.navigation.push('Detail', {
           url: item.url,
           title: item.source.name,
         })

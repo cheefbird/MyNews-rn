@@ -10,13 +10,27 @@ import { fetchTopArticles } from '../actions';
 import ArticleCard from '../components/ArticleCard';
 
 class TopNewsList extends Component {
+  static navigationOptions = {
+    title: 'Top News',
+  };
+
   componentWillMount() {
     this.props.fetchTopArticles();
   }
 
-  keyExtractor = (item, index) => item.title;
+  keyExtractor = (item, index) => item.url;
 
-  renderRow = ({ item }) => <ArticleCard article={item} />;
+  renderRow = ({ item }) => (
+    <ArticleCard
+      article={item}
+      onPress={() =>
+        this.props.navigation.push('ArticleDetail', {
+          url: item.url,
+          title: item.source.name,
+        })
+      }
+    />
+  );
 
   render() {
     console.log(this.props);

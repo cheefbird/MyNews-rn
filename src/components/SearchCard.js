@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
@@ -20,9 +22,10 @@ class SearchCard extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'flex-start',
-    alignItems: 'center',
     backgroundColor: 'white',
+    padding: 15,
+    margin: 25,
+    alignItems: 'center',
   },
 });
 

@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View, TextInput, StyleSheet } from 'react-native';
@@ -16,17 +18,19 @@ class SearchBar extends Component {
   render() {
     const { content } = this.props;
     const placeholderText = this.createPlaceholderText(content);
+
     return (
       <View style={styles.container}>
         <TextInput
           enablesReturnKeyAutomatically
           placeholder={placeholderText}
+          placeholderTextColor="tomato"
           clearButtonMode="always"
           autoCapitalize="none"
           autoCorrect={false}
           onSubmitEditing={(text) => console.log(text)}
-          returnKryLabel="search"
-          style={styles.searchInput}
+          returnKeyType="search"
+          style={styles.searchBar}
         />
       </View>
     );
@@ -40,13 +44,17 @@ SearchBar.propTypes = {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 10,
+    marginHorizontal: 10,
+    padding: 10,
+    borderRadius: 22,
+    borderWidth: 1,
+    borderColor: 'tomato',
   },
-  searchInput: {
+  searchBar: {
     width: 200,
-    height: 75,
   },
 });
 

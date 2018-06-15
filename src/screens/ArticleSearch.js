@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import SearchCard from '../components/SearchCard';
 
@@ -11,14 +11,13 @@ const ArticleSearch = (props) => {
   );
 };
 
-const styles = {
+const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'grey',
   },
-  text: {
-    fontSize: 18,
-  },
-};
+});
 
 export default ArticleSearch;

@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { SearchBar } from 'react-native-elements';
+import { View, Text, StyleSheet } from 'react-native';
+import SearchBar from './SearchBar';
 
 class SearchCard extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Text>Search all articles!</Text>
-        <SearchBar platform="android" placeholder="Search articles ..." />
+        <SearchBar
+          content="articles"
+          searchFunction={(text) => {
+            console.log(text);
+          }}
+        />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    backgroundColor: 'white',
+  },
+});
 
 export default SearchCard;

@@ -14,13 +14,7 @@ import ArticleDetail from './screens/ArticleDetail';
 import TopNewsList from './screens/TopNewsList';
 import ArticleSearch from './screens/ArticleSearch';
 
-// const App = () => (
-//   <Provider store={createStore(reducers, {}, applyMiddleware(ReduxThunk))}>
-//     <View style={styles.container}>
-//       <TopNewsList />
-//     </View>
-//   </Provider>
-// );
+const store = Reactotron.createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
 const TopNewsStack = createStackNavigator({
   List: TopNewsList,
@@ -70,7 +64,7 @@ const styles = StyleSheet.create({
 export default class App extends Component {
   render() {
     return (
-      <Provider store={createStore(reducers, {}, applyMiddleware(ReduxThunk))}>
+      <Provider store={store}>
         <View style={styles.container}>
           <AppTabs />
         </View>

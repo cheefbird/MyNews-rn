@@ -7,10 +7,8 @@ import { View, TextInput, StyleSheet } from 'react-native';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-    console.log('SearchBar PROPs');
-    console.log(props);
-    console.log('SearchBar STATE');
-    console.log(this.state);
+
+    this.state = { query: '' };
   }
 
   createPlaceholderText = (content) => `Search ${content} ...`;
@@ -28,7 +26,8 @@ class SearchBar extends Component {
           clearButtonMode="always"
           autoCapitalize="none"
           autoCorrect={false}
-          onSubmitEditing={(text) => console.log(text)}
+          onChangeText={(text) => this.setState({ query: text })}
+          onEndEditing={() => console.log(this.state)}
           returnKeyType="search"
           style={styles.searchBar}
         />

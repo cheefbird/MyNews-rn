@@ -3,9 +3,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import {
+  createStackNavigator,
+  createBottomTabNavigator,
+} from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Reactotron from 'reactotron-react-native';
 
@@ -13,6 +16,7 @@ import reducers from './reducers';
 import ArticleDetail from './screens/ArticleDetail';
 import TopNewsList from './screens/TopNewsList';
 import ArticleSearch from './screens/ArticleSearch';
+import SearchResults from './screens/SearchResults';
 
 const store = Reactotron.createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
@@ -23,6 +27,7 @@ const TopNewsStack = createStackNavigator({
 
 const SearchStack = createStackNavigator({
   Home: ArticleSearch,
+  Results: SearchResults,
 });
 
 const AppTabs = createBottomTabNavigator(
@@ -57,7 +62,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // justifyContent: "center",
     // alignItems: "center",
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#ebebeb',
   },
 });
 

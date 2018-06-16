@@ -2,16 +2,23 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, TextInput, StyleSheet } from 'react-native';
+import { View, TextInput, StyleSheet, Animated } from 'react-native';
 
 class SearchBar extends Component {
   constructor(props) {
     super(props);
+    console.log('INSIDE SEARCHBAR');
+    console.log(this.state);
 
     this.state = { query: '' };
+    console.log(this.state);
   }
 
   createPlaceholderText = (content) => `Search ${content} ...`;
+
+  submitQuery = () => {
+    this.props.searchFunction(this.state.query);
+  };
 
   render() {
     const { content } = this.props;
@@ -27,7 +34,7 @@ class SearchBar extends Component {
           autoCapitalize="none"
           autoCorrect={false}
           onChangeText={(text) => this.setState({ query: text })}
-          onEndEditing={() => console.log(this.state)}
+          onSubmitEditing={this.submitQuery}
           returnKeyType="search"
           style={styles.searchBar}
         />

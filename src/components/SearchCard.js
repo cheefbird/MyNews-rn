@@ -11,9 +11,7 @@ class SearchCard extends Component {
         <Text>Search all articles!</Text>
         <SearchBar
           content="articles"
-          searchFunction={(text) => {
-            console.log(text);
-          }}
+          searchFunction={this.props.searchFunction}
         />
       </View>
     );

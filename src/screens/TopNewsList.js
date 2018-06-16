@@ -14,7 +14,7 @@ class TopNewsList extends Component {
     title: 'Top News',
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchTopArticles();
   }
 

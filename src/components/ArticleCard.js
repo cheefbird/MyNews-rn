@@ -16,7 +16,12 @@ export default class ArticleCard extends PureComponent {
         imageProps={{ resizeMode: 'cover' }}
       >
         <Text style={{ marginBottom: 10 }}>{description}</Text>
-        <Button raised backgroundColor="#006bcd" title="Read More" onPress={this.props.onPress} />
+        <Button
+          raised
+          backgroundColor="#006bcd"
+          title="Read More"
+          onPress={this.props.onPress}
+        />
       </Card>
     );
   }

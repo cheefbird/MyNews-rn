@@ -17,11 +17,12 @@ class ArticleDetail extends PureComponent {
 
   constructor(props) {
     super(props);
-    console.log('INSIDE ARTICLEDETAIL');
-    console.log(this.state);
 
     const { navigation } = props;
-    const url = navigation.getParam('url', 'http://www.countingthevotes.com/2000/');
+    const url = navigation.getParam(
+      'url',
+      'http://www.countingthevotes.com/2000/',
+    );
 
     this.state = { url };
     console.log(this.state);

@@ -36,6 +36,7 @@ class TopNewsList extends Component {
     console.log(this.props);
     return (
       <FlatList
+        style={{ backgroundColor: '#f5f5f5' }}
         data={this.props.articles}
         extraData={this.props.articles}
         keyExtractor={this.keyExtractor}

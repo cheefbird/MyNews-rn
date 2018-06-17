@@ -27,7 +27,10 @@ class ArticleSearch extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <SearchCard searchFunction={this.searchArticles} />
+        <SearchCard
+          searchFunction={this.searchArticles}
+          alertMessage={this.props.helpMessage}
+        />
       </View>
     );
   }
@@ -41,8 +44,10 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = (state) => {
-  const results = _.map(state.searchResults, (val) => ({ ...val }));
-  return { results };
+  const results = _.map(state.search.results, (val) => ({ ...val }));
+  const helpMessage = state.search.infoText;
+
+  return { results, helpMessage };
 };
 
 export default connect(

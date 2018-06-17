@@ -7,5 +7,5 @@ import SearchReducer from './SearchReducer';
 
 export default combineReducers({
   articles: TopArticlesReducer,
-  searchResults: SearchReducer,
+  search: SearchReducer,
 });

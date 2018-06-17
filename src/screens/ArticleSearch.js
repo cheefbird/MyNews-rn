@@ -9,6 +9,10 @@ import { searchArticles } from '../actions';
 import SearchCard from '../components/SearchCard';
 
 class ArticleSearch extends Component {
+  static navigationOptions = {
+    title: 'Search',
+  };
+
   constructor(props) {
     super(props);
 

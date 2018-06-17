@@ -13,6 +13,7 @@ class SearchCard extends Component {
           content="articles"
           searchFunction={this.props.searchFunction}
         />
+        <Text style={styles.alertMessage}>{this.props.alertMessage}</Text>
       </View>
     );
   }
@@ -24,6 +25,14 @@ const styles = StyleSheet.create({
     padding: 15,
     margin: 25,
     alignItems: 'center',
+  },
+  alertMessage: {
+    marginTop: 10,
+    paddingHorizontal: 25,
+    color: 'red',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 16,
   },
 });
 

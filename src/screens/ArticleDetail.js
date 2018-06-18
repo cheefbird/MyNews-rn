@@ -1,3 +1,5 @@
+// @flow
+
 import React, { PureComponent } from 'react';
 import { WebView } from 'react-native';
 
@@ -9,18 +11,18 @@ import { WebView } from 'react-native';
 // };
 
 class ArticleDetail extends PureComponent {
-  static navigationOptions = ({ navigation }) => {
-    return {
-      title: navigation.getParam('title', 'Top News'),
-    };
-  };
+  static navigationOptions = ({ navigation }) => ({
+    title: navigation.getParam('title', 'Top News'),
+  });
+
   constructor(props) {
     super(props);
-    console.log('INSIDE ARTICLEDETAIL');
-    console.log(this.state);
 
     const { navigation } = props;
-    const url = navigation.getParam('url', 'http://www.countingthevotes.com/2000/');
+    const url = navigation.getParam(
+      'url',
+      'http://www.countingthevotes.com/2000/',
+    );
 
     this.state = { url };
     console.log(this.state);

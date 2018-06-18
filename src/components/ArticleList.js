@@ -8,7 +8,15 @@ import ArticleCard from './ArticleCard';
 
 class ArticleList extends Component {
   render() {
-    return <FlatList />;
+    return (
+      <FlatList
+        style={{ backgroundColor: '#f5f5f5' }}
+        data={this.props.articles}
+        extraData={this.props.articles}
+        keyExtractor={this.keyExtractor}
+        renderItem={this.renderRow}
+      />
+    );
   }
 }
 

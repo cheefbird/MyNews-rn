@@ -14,7 +14,7 @@ class TopNewsList extends Component {
     title: 'Top News',
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchTopArticles();
   }
 
@@ -24,7 +24,7 @@ class TopNewsList extends Component {
     <ArticleCard
       article={item}
       onPress={() =>
-        this.props.navigation.push('ArticleDetail', {
+        this.props.navigation.push('Detail', {
           url: item.url,
           title: item.source.name,
         })
@@ -36,6 +36,7 @@ class TopNewsList extends Component {
     console.log(this.props);
     return (
       <FlatList
+        style={{ backgroundColor: '#f5f5f5' }}
         data={this.props.articles}
         extraData={this.props.articles}
         keyExtractor={this.keyExtractor}

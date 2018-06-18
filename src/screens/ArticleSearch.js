@@ -19,6 +19,14 @@ class ArticleSearch extends Component {
     this.searchArticles = this.searchArticles.bind(this);
   }
 
+  componentDidUpdate = (prevProps, prevState) => {
+    if (this.props.results !== prevProps.results) {
+      this.props.navigation.push('Results', {
+        articles: this.props.results,
+      });
+    }
+  };
+
   searchArticles(query) {
     console.log(query);
     this.props.searchArticles(query);

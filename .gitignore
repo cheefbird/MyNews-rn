@@ -1,3 +1,16 @@
+# Manually Added Ignores
+codesigndoc_exports/*
+
+# ***** GENERATED IGNORES *****
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
 # OSX
 #
 .DS_Store

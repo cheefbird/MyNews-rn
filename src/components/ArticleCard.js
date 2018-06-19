@@ -6,7 +6,7 @@ import { Card, Button } from 'react-native-elements';
 
 export default class ArticleCard extends PureComponent {
   render() {
-    const { title, urlToImage, description } = this.props.article;
+    const { title, urlToImage, description, source } = this.props.article;
     const formattedTitle = title.toUpperCase();
 
     let backupImage;
@@ -22,6 +22,16 @@ export default class ArticleCard extends PureComponent {
       >
         <Text style={{ fontSize: 18, fontWeight: 'bold', marginVertical: 10 }}>
           {formattedTitle}
+        </Text>
+        <Text
+          style={{
+            marginBottom: 8,
+            textAlign: 'center',
+            fontWeight: 'bold',
+            fontSize: 14,
+          }}
+        >
+          {source.name}
         </Text>
         <Text style={{ marginBottom: 10, fontSize: 12 }}>{description}</Text>
         <Button

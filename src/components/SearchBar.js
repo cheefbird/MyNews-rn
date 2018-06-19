@@ -7,11 +7,8 @@ import { View, TextInput, StyleSheet, Animated } from 'react-native';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-    console.log('INSIDE SEARCHBAR');
-    console.log(this.state);
 
     this.state = { query: '' };
-    console.log(this.state);
   }
 
   createPlaceholderText = (content) => `Search ${content} ...`;

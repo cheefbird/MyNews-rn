@@ -25,7 +25,6 @@ class ArticleDetail extends PureComponent {
     );
 
     this.state = { url };
-    console.log(this.state);
   }
 
   render() {

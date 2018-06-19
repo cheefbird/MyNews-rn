@@ -28,7 +28,6 @@ class ArticleSearch extends Component {
   };
 
   searchArticles(query) {
-    console.log(query);
     this.props.searchArticles(query);
   }
 

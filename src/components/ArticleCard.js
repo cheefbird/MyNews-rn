@@ -9,8 +9,6 @@ export default class ArticleCard extends PureComponent {
     const { title, urlToImage, description, source } = this.props.article;
     const formattedTitle = title.toUpperCase();
 
-    let backupImage;
-
     return (
       <Card
         // containerStyle={{ padding: 8 }}

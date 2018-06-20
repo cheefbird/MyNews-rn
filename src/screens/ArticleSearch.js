@@ -21,7 +21,6 @@ class ArticleSearch extends Component {
 
   componentDidUpdate = (prevProps) => {
     if (this.props.results.length == 0) {
-      console.log('NO RESULTS - NOT NAVIGATING');
     } else if (this.props.results !== prevProps.results) {
       this.props.navigation.push('Results', {
         articles: this.props.results,

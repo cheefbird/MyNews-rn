@@ -13,40 +13,27 @@ export default class ArticleCard extends PureComponent {
   };
 
   render() {
-    const { title, urlToImage, description, source } = this.props.article;
-    const formattedSource = `Source: ${source.name.toUpperCase()}`;
-    const imageProtocol = _.truncate(urlToImage, {
-      separator: ':',
-      omission: '',
-    });
+    const { title, abstract, multimedia } = this.props.article;
 
-    let descriptionText;
-    let imageUri;
+    let imageUrl;
 
-    if (description == null) {
-      descriptionText = null;
-    } else {
-      descriptionText = (
-        <Text style={styles.descriptionText}>{description}</Text>
-      );
+    for (var image in multimedia) {
+      if (image.format === 'superJumbo') {
+        imageUrl = image.url;
+      }
     }
 
-    if (imageProtocol === 'http') {
-      imageUri = 'https://placeimg.com/366/150/people.jpg';
-    } else {
-      imageUri = urlToImage;
-    }
+    console.log(imageUrl);
 
     return (
       <Card
         // containerStyle={{ padding: 8 }}
-        image={{ uri: imageUri }}
+        image={{ uri: imageUrl }}
         imageStyle={styles.image}
         imageProps={{ resizeMode: 'cover' }}
       >
         <Text style={styles.titleText}>{title.toUpperCase()}</Text>
-        <Text style={styles.sourceText}>{formattedSource}</Text>
-        {descriptionText}
+        <Text style={styles.descriptionText}>{abstract}</Text>
         <Button
           raised
           backgroundColor="#006bcd"

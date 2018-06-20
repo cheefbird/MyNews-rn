@@ -1,21 +1,21 @@
 // @flow
 
 import { FETCH_TOP_ARTICLES } from './types';
-import { API_TOKEN } from '../config/Network';
+import { API_TOKEN, NYT_API_TOKEN } from '../config/Network';
 
-const path = `https://newsapi.org/v2/top-headlines?country=us&pageSize=50&sortBy=publishedAt&apiKey=${API_TOKEN}`;
+const path = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${NYT_API_TOKEN}`;
 
 export const fetchTopArticles = () => {
   return (dispatch) => {
     fetch(path)
       .then((response) => response.json())
       .then((json) => {
-        const results = json.articles;
+        const articles = json.results;
 
         // TODO: extract this to its own action
         dispatch({
           type: FETCH_TOP_ARTICLES,
-          payload: results,
+          payload: articles,
         });
       });
   };

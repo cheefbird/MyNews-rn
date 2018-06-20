@@ -18,15 +18,15 @@ class TopNewsList extends Component {
     this.props.fetchTopArticles();
   }
 
-  keyExtractor = (item, index) => item.url;
+  keyExtractor = (item, index) => item.short_url;
 
   renderRow = ({ item }) => (
     <ArticleCard
       article={item}
       onPress={() =>
         this.props.navigation.push('Detail', {
-          url: item.url,
-          title: item.source.name,
+          url: item.short_url,
+          title: item.section,
         })
       }
     />

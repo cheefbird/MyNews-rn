@@ -28,6 +28,7 @@ const TopNewsStack = createStackNavigator({
 const SearchStack = createStackNavigator({
   Home: ArticleSearch,
   Results: SearchResults,
+  Detail: ArticleDetail,
 });
 
 const AppTabs = createBottomTabNavigator(

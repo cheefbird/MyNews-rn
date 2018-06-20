@@ -33,7 +33,6 @@ class TopNewsList extends Component {
   );
 
   render() {
-    console.log(this.props);
     return (
       <FlatList
         style={{ backgroundColor: '#f5f5f5' }}
@@ -47,7 +46,6 @@ class TopNewsList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   const articles = _.map(state.articles, (val) => ({ ...val }));
   return { articles };
 };

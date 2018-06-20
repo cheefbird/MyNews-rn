@@ -2,9 +2,14 @@
 
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
-import { ListItem } from 'react-native-elements';
+
+import ArticleCard from '../components/ArticleCard';
 
 class SearchResults extends Component {
+  static navigationOptions = {
+    title: 'Search Results',
+  };
+
   constructor(props) {
     super(props);
     const articles = props.navigation.getParam('articles');
@@ -15,7 +20,15 @@ class SearchResults extends Component {
   keyExtractor = (item, index) => item.title;
 
   renderItem = ({ item }) => (
-    <ListItem title={item.title} subtitle={item.description} />
+    <ArticleCard
+      article={item}
+      onPress={() =>
+        this.props.navigation.push('Detail', {
+          url: item.url,
+          title: item.source.name,
+        })
+      }
+    />
   );
 
   render() {

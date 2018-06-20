@@ -20,7 +20,15 @@ class SearchResults extends Component {
   keyExtractor = (item, index) => item.title;
 
   renderItem = ({ item }) => (
-    <ArticleCard article={item} onPress={() => console.log('button pressed')} />
+    <ArticleCard
+      article={item}
+      onPress={() =>
+        this.props.navigation.push('Detail', {
+          url: item.url,
+          title: item.source.name,
+        })
+      }
+    />
   );
 
   render() {

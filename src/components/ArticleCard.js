@@ -20,8 +20,6 @@ export default class ArticleCard extends PureComponent {
       omission: '',
     });
 
-    console.log(imageProtocol);
-
     let descriptionText;
     let imageUri;
 

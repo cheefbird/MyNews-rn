@@ -47,7 +47,7 @@ class ArticleSearch extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'grey',
+    backgroundColor: '#f4f4f4',
   },
 });
 

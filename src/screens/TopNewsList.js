@@ -3,7 +3,7 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { FlatList } from 'react-native';
+import { FlatList, StatusBar, View } from 'react-native';
 
 import { fetchTopArticles } from '../actions';
 
@@ -34,13 +34,17 @@ class TopNewsList extends Component {
 
   render() {
     return (
-      <FlatList
-        style={{ backgroundColor: '#f5f5f5' }}
-        data={this.props.articles}
-        extraData={this.props.articles}
-        keyExtractor={this.keyExtractor}
-        renderItem={this.renderRow}
-      />
+      <View>
+        <StatusBar barStyle="light-content" />
+
+        <FlatList
+          style={{ backgroundColor: '#f5f5f5' }}
+          data={this.props.articles}
+          extraData={this.props.articles}
+          keyExtractor={this.keyExtractor}
+          renderItem={this.renderRow}
+        />
+      </View>
     );
   }
 }
